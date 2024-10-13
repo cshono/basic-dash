@@ -15,6 +15,9 @@ fig = px.line(df, x="Year", y="Sales", title="Yearly Sales")
 # Initialize the Dash app
 app = dash.Dash(__name__)
 
+# Expose the underlying Flask server
+server = app.server
+
 # Define the layout
 app.layout = html.Div([
     html.H1("Basic Dash App"),
