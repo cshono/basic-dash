@@ -2,7 +2,7 @@ import dash
 from dash import dcc, html, callback, Input, Output
 import plotly.express as px
 import pandas as pd
-from get_live_data import (
+from src.get_live_data import (
     plot_lmp_data, 
     plot_weather_data, 
     get_live_data, 
